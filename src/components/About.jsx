@@ -21,9 +21,9 @@ function About() {
             🎓 Education & Training
           </h2>
           <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li>ANIIT in Cloud & Mobile Software Engineering – NIIT Institute (2023)</li>
-            <li>B.Sc in Computer Application – Mumbai University (2024)</li>
-            <li>Certified in React.js, Node.js, and MongoDB – Udemy & Coursera</li>
+            <li>ANIIT in Cloud & Mobile Software Engineering – NIIT Institute (2019 - 2022)</li>
+            <li>Completed my Bachelor's – Mumbai University (2023)</li>
+            <li>Certified in React.js, Node.js, and MongoDB – RstForum (Mumbai - Dadar) in 2023</li>
           </ul>
         </div>
 
@@ -37,7 +37,7 @@ function About() {
             <li>MERN Stack (MongoDB, Express.js, React, Node.js)</li>
             <li>Redux Toolkit, REST APIs, JWT Auth, Firebase</li>
             <li>Tailwind CSS, Bootstrap, Responsive UI Design</li>
-            <li>Git, GitHub, Postman, MongoDB Compass</li>
+            <li>Git, GitHub, Postman, MongoDB, SQL, Linode</li>
           </ul>
         </div>
 
@@ -48,13 +48,13 @@ function About() {
           </h2>
           <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
             <li>
-              <span className="font-semibold">Junior Web Developer</span> – CodeMatrix Solutions (2022–2023)
+              <span className="font-semibold">Web Developer</span> – CodeMatrix Solutions (2024–2025)
               <p className="ml-5 text-sm">
                 Built and maintained full stack web applications using React and Node.js. Collaborated with designers and backend teams to optimize user experience.
               </p>
             </li>
             <li>
-              <span className="font-semibold">Freelance Developer</span> – Self-employed (2023–Present)
+              <span className="font-semibold">Full Stack Developer Training</span> – Trainee (2023) 5 months Trainee under RstForum Experts.
               <p className="ml-5 text-sm">
                 Completed various client projects including blogs, e-commerce sites, voting apps, and portfolio websites with fully responsive UIs and secure authentication.
               </p>
@@ -68,8 +68,7 @@ function About() {
             🏆 Achievements & Awards
           </h2>
           <ul className="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li>Top 10% Performer – NIIT Capstone Project Showcase (2023)</li>
-            <li>Hackathon Finalist – DevJam Mumbai (2022)</li>
+            <li>Top 5% Performer – NIIT Capstone Project Showcase (2022) - CareConnect360</li>
           </ul>
         </div>
 

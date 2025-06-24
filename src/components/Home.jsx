@@ -1,8 +1,7 @@
 import React from "react";
 import pic from "../../public/satyam.png";
 
-import { FaSquareFacebook, FaLinkedin, FaTelegram, FaReact, FaNodeJs } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io";
+import { FaGithub, FaLinkedin, FaTelegram, FaReact, FaNodeJs } from "react-icons/fa6";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { ReactTyped } from "react-typed";
 
@@ -35,23 +34,13 @@ function Home() {
               <h2 className="font-bold text-center">Connect With Me</h2>
               <ul className="flex justify-center md:justify-start space-x-4 text-2xl text-gray-600">
                 <li>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                    <FaSquareFacebook className="hover:text-blue-600 transition duration-200" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/satyam-sawant-a257802a7/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="hover:text-blue-500 transition duration-200" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                    <IoLogoYoutube className="hover:text-red-600 transition duration-200" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
-                    <FaTelegram className="hover:text-blue-400 transition duration-200" />
+                  <a href="https://github.com/SatyamDevGenie" target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="hover:text-blue-400 transition duration-200" />
                   </a>
                 </li>
               </ul>
