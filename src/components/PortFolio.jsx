@@ -12,23 +12,23 @@ function PortFolio() {
     {
       id: 1,
       logo: mern,
-      name: "BlogSy",
+      name: "BlogSy - Mern Stack",
       // description: "BlogSy is a trending blog platform made by me in 2025 using Mern Stack.",
-      demoLink: "#",
+      demoLink: "https://drive.google.com/file/d/10e3TTRDHd6ptuWZI6JqJbakgL0WngVLa/view?usp=drive_link",
       codeLink: "https://github.com/SatyamDevGenie/BlogSy",
     },
     {
       id: 2,
       logo: mern,
-      name: "petsCare",
+      name: "petsCare - Mern Stack",
       // description: "Minimal and flexible Node.js web framework for APIs.",
-      demoLink: "#",
+      demoLink: "https://drive.google.com/file/d/111zK26Clmz4V5epdJ3_JeLh_TNm93bHL/view?usp=drive_link",
       codeLink: "https://github.com/SatyamDevGenie/petsCare",
     },
     {
       id: 3,
       logo: mern,
-      name: "Quickify",
+      name: "Quickify - Mern Stack",
       // description: "Frontend library for building user interfaces using components.",
       demoLink: "#",
       codeLink: "https://github.com/SatyamDevGenie/Quickify",
@@ -36,15 +36,23 @@ function PortFolio() {
     {
       id: 4,
       logo: java,
-      name: "CareConnect360",
+      name: "CareConnect - Full Stack Java",
       // description: "Backend runtime for building scalable network applications.",
-      demoLink: "#",
+      demoLink: "https://drive.google.com/file/d/1uFVBQNXldc3xfcVryZl8sXwn1T7SlEqz/view?usp=drive_link",
       codeLink: "https://github.com/SatyamDevGenie/CareConnect360",
     },
-    {
+     {
       id: 5,
+      logo: mern,
+      name: "NoteZipper",
+      // description: "Backend runtime for building scalable network applications.",
+      demoLink: "https://drive.google.com/file/d/1JTuYixYdebULzNUiHBOfgoiDwaYt0Cbv/view?usp=drive_link",
+      codeLink: "https://github.com/SatyamDevGenie/NoteZipper2023",
+    },
+    {
+      id: 6,
       logo: nodejs,
-      name: "Nodify Rest - Backend",
+      name: "Nodify RestAPI - Backend",
       // description: "Backend runtime for building scalable network applications. you can see my backend code on my GitHub",
       demoLink: "https://github.com/SatyamDevGenie/NodifyREST_API",
       codeLink: "https://github.com/SatyamDevGenie/NodifyREST_API",
@@ -85,16 +93,16 @@ function PortFolio() {
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md"
               >
-                Live Demo
+                View Project
               </a>
-              <a
+              {/* <a
                 href={codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-md"
               >
                 Source Code
-              </a>
+              </a> */}
             </div>
           </div>
         ))}
