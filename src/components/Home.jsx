@@ -1,7 +1,7 @@
 import React from "react";
 import pic from "../../public/satyam.png";
 
-import { FaGithub, FaLinkedin, FaTelegram, FaReact, FaNodeJs } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaInstagram, FaReact, FaNodeJs } from "react-icons/fa6";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { ReactTyped } from "react-typed";
 
@@ -41,6 +41,11 @@ function Home() {
                 <li>
                   <a href="https://github.com/SatyamDevGenie" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="hover:text-blue-400 transition duration-200" />
+                  </a>
+                </li>
+                 <li>
+                  <a href="https://www.instagram.com/satyam.sawant.18?igsh=MW5mOGRqMnNjcHJsZg==" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram className="hover:text-blue-400 transition duration-200" />
                   </a>
                 </li>
               </ul>

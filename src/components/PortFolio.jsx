@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import java from "../../public/java.png";
 import python from "../../public/python.webp";
 import mongoDB from "../../public/mongodb.jpg";
@@ -13,47 +14,47 @@ function PortFolio() {
       id: 1,
       logo: mern,
       name: "BlogSy - Mern Stack",
-      // description: "BlogSy is a trending blog platform made by me in 2025 using Mern Stack.",
-      demoLink: "https://drive.google.com/file/d/10e3TTRDHd6ptuWZI6JqJbakgL0WngVLa/view?usp=drive_link",
+      description: "A trending blog platform built using MERN Stack in 2025 with authentication and post management.",
+      demoLink: "https://drive.google.com/file/d/10e3TTRDHd6ptuWZI6JqJbakgL0WngVLa/view?usp=sharing",
       codeLink: "https://github.com/SatyamDevGenie/BlogSy",
     },
     {
       id: 2,
       logo: mern,
       name: "petsCare - Mern Stack",
-      // description: "Minimal and flexible Node.js web framework for APIs.",
-      demoLink: "https://drive.google.com/file/d/111zK26Clmz4V5epdJ3_JeLh_TNm93bHL/view?usp=drive_link",
+      description: "A pet management and care platform featuring user roles and vet functionalities.",
+      demoLink: "https://drive.google.com/file/d/111zK26Clmz4V5epdJ3_JeLh_TNm93bHL/view?usp=sharing",
       codeLink: "https://github.com/SatyamDevGenie/petsCare",
     },
     {
       id: 3,
       logo: mern,
       name: "Quickify - Mern Stack",
-      // description: "Frontend library for building user interfaces using components.",
-      demoLink: "#",
+      description: "Task tracking and productivity app built with a clean UI and secure backend.",
+      demoLink: "https://drive.google.com/file/d/1qb0mnmdYRcjTH6mCwE23ijutTTQYSPHw/view?usp=sharing",
       codeLink: "https://github.com/SatyamDevGenie/Quickify",
     },
     {
       id: 4,
       logo: java,
       name: "CareConnect - Full Stack Java",
-      // description: "Backend runtime for building scalable network applications.",
-      demoLink: "https://drive.google.com/file/d/1uFVBQNXldc3xfcVryZl8sXwn1T7SlEqz/view?usp=drive_link",
+      description: "A hospital appointment system using Java Servlets and JDBC.",
+      demoLink: "https://drive.google.com/file/d/1uFVBQNXldc3xfcVryZl8sXwn1T7SlEqz/view?usp=sharing",
       codeLink: "https://github.com/SatyamDevGenie/CareConnect360",
     },
-     {
+    {
       id: 5,
       logo: mern,
-      name: "NoteZipper",
-      // description: "Backend runtime for building scalable network applications.",
-      demoLink: "https://drive.google.com/file/d/1JTuYixYdebULzNUiHBOfgoiDwaYt0Cbv/view?usp=drive_link",
+      name: "NoteZipper - Mern Stack",
+      description: "A secure personal note management app with user authentication.",
+      demoLink: "https://drive.google.com/file/d/1JTuYixYdebULzNUiHBOfgoiDwaYt0Cbv/view?usp=sharing",
       codeLink: "https://github.com/SatyamDevGenie/NoteZipper2023",
     },
     {
       id: 6,
       logo: nodejs,
       name: "Nodify RestAPI - Backend",
-      // description: "Backend runtime for building scalable network applications. you can see my backend code on my GitHub",
+      description: "A RESTful API backend using Express.js for scalable data operations. I just uploaded soruce of this project",
       demoLink: "https://github.com/SatyamDevGenie/NodifyREST_API",
       codeLink: "https://github.com/SatyamDevGenie/NodifyREST_API",
     },
@@ -64,17 +65,29 @@ function PortFolio() {
       name="Portfolio"
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
     >
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-extrabold text-gray-800">Portfolio</h1>
-        <p className="text-lg text-gray-600 mt-2">Featured Technologies & Projects</p>
+      <motion.div
+        className="text-center mb-10"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      ><br/><br/>
+        <h1 className="text-4xl font-extrabold text-gray-800">Projects</h1>
+        <p className="text-lg text-gray-600 mt-2">
+          Featured Technologies & Projects
+        </p>
         <div className="w-24 h-1 bg-green-600 mx-auto mt-3"></div>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {cardItem.map(({ id, logo, name, description, demoLink, codeLink }) => (
-          <div
+          <motion.div
             key={id}
-            className="bg-white rounded-xl shadow-md border hover:shadow-lg transform hover:scale-[1.03] transition duration-300 p-5 flex flex-col justify-between"
+            className="bg-white rounded-xl shadow-md border hover:shadow-xl transform hover:scale-[1.02] transition duration-300 p-5 flex flex-col justify-between"
+            whileHover={{ scale: 1.03 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: id * 0.1 }}
           >
             <div className="flex flex-col items-center">
               <img
@@ -82,8 +95,8 @@ function PortFolio() {
                 alt={`${name} logo`}
                 className="w-24 h-24 object-contain rounded-full border p-2 mb-4"
               />
-              <h2 className="text-xl font-bold text-gray-800">{name}</h2>
-              <p className="text-1xl font-medium text-gray-600 mt-2 text-center px-2">{description}</p>
+              <h2 className="text-xl font-bold text-gray-800 text-center">{name}</h2>
+              <p className="text-sm text-gray-600 mt-3 text-center px-2">{description}</p>
             </div>
 
             <div className="flex justify-center gap-4 mt-6">
@@ -91,20 +104,20 @@ function PortFolio() {
                 href={demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition"
               >
                 View Project
               </a>
-              {/* <a
+              <a
                 href={codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-md"
+                className="bg-gray-800 hover:bg-gray-900 text-white text-sm font-semibold px-4 py-2 rounded-md transition"
               >
                 Source Code
-              </a> */}
+              </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

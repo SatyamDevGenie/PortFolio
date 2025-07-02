@@ -27,7 +27,7 @@ function Contact() {
       name="Contact"
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20"
     >
-      <div className="text-center">
+      <div className="text-center"><br/><br/>
         <h1 className="text-4xl font-bold text-gray-800">Contact Me</h1>
         <p className="text-gray-600 mt-2">
           I'd love to hear from you! Fill out the form below and I'll get back
